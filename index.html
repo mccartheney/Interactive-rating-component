@@ -5,45 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/styleDesktop.css">
+
+
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; position: relative; bottom: 0; text-align: center; width: 100%; color: white;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
   
+  <div class="main">
+    <div class="form change">
+
+      <div class="image">
+        <img src="./images/icon-star.svg">
+      </div>
+
+      <div class="title">
+        <h1>
+          How did we do?
+        </h1>
+      </div>
+
+      <div class="textContent">
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+      </div>
+
+      <div class="grades">
+        <div class="grade">
+          <p>1</p>
+        </div>
+
+        <div class="grade">
+          <p>2</p>
+        </div>
+
+        <div class="grade">
+          <p>3</p>
+        </div>
+
+        <div class="grade">
+          <p>4</p>
+        </div>
+
+        <div class="grade">
+          <p>5</p>
+        </div>
+      </div>
+
+      <button class="submitGrade">
+        Submit
+      </button>
+    
+    </div>
+
+    <div class="rating invisible">
+      
+      <div class="image">
+        <img src="./images/illustration-thank-you.svg" alt="">
+      </div>
+
+      <div class="rate">
+        <p>
+          You selected <span class="spanRate"></span> out of 5
+        </p>
+      </div>
+
+      <div class="header">
+        <h1>
+          Thank you!
+        </h1>
+      </div>
+
+      <div class="textContent">
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+  </div>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/mccartheney">Mccartheney Mendes</a>.
   </div>
+
+  <script src="./src/js/main.js"></script>
 </body>
 </html>

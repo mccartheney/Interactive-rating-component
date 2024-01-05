@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+}
+.main {
+    max-width: 350px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 15px;
+    min-height: 380px;
+}
+.form {
+    margin: 10%;
+    display: block;
+}
+
+.form .image {
+    background-color: hsla(216, 12%, 54%, 0.163);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.form .image img {
+    margin-right: -1px;
+}
+
+.form .title {
+    margin-bottom: 15px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.form .textContent {
+    color: hsla(217, 12%, 63%);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.form .grades {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form .grades .grade {
+    background-color: hsla(216, 12%, 54%, 0.163);
+    color: hsla(217, 12%, 63%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+.form .grades .grade:hover {
+    color: white;
+    background-color: hsl(217, 12%, 63%);
+}
+
+.form .grades .active {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.form .grades .active:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.form .submitGrade {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.submitGrade:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+
+.rating {
+    margin: 10%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rating .image img {
+    width: 150px;
+}
+
+.rating .rate {
+    background-color: hsla(216, 12%, 54%, 0.163);
+    border-radius: 20px;
+    color:hsl(25, 97%, 53%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.rating .rate p {
+    font-size: 13px;
+    margin: 8px;
+}
+
+.rating .header {
+    color: hsl(0, 0%, 100%);
+    margin-top: 30px;
+}
+
+.rating .textContent {
+    color: hsla(217, 12%, 63%);
+    margin-top: 20px;
+}
+
+.invisible {
+    display: none;
+}
