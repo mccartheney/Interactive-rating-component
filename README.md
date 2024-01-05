@@ -24,12 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./src/screenShots/Desktop.png)
+![](./src/screenShots/mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/mccartheney/Interactive-rating-component)
+- Live Site URL: [Site URL](https://fancy-croissant-717578.netlify.app/)
 
 ## My process
 
@@ -45,13 +46,11 @@ Users should be able to:
 
 In this project i learned how to vhange classes with js
 
-
-
 ```js
 allGrades.forEach (turnOff => {
       turnOff.classList.remove("active")
   })
-  grade.classList.toggle('active');
+grade.classList.toggle('active');
 ```
 
 ```js
